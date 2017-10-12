@@ -96,7 +96,7 @@ $(document).ready(function() {
 		$("#character-section").hide();
 
 		// Display character and combatants.
-		displayCharacters(cursorSelectedCharacter, "#selected-character";
+		displayCharacters(cursorSelectedCharacter, "#selected-character");
 		displayCharacters(combatants, "#enemies-to-attack");
 	}
 	})
