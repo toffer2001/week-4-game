@@ -65,15 +65,15 @@ $(document).ready(function() {
 		}
 	}
 
-		if (areaRender === "#selected-character") {
-			renderOne(charObj, areaRender);
-		}
+		// if (areaRender === "#selected-character") {
+		// 	renderOne(charObj, areaRender);
+		// }
 
-		if (areaRender === "#enemies-to-attack") {
-			for(var i=0; i<charObj.length; i++) {
-				renderOne(charObj[i], areaRender);
-			}
-		}
+		// if (areaRender === "#enemies-to-attack") {
+		// 	for(var i=0; i<charObj.length; i++) {
+		// 		renderOne(charObj[i], areaRender);
+		// 	}
+		// }
 
 	// displayCharacters(character, "#character-section");
 
