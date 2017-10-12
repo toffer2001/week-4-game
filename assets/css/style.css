@@ -8,20 +8,23 @@ font-family: 'BenchNine', sans-serif;
 
 body {
     background-image: url("../images/starwars_background.jpg");
+    background-repeat: no-repeat;;
+  /*background-position: center;*/
+    background-attachment: fixed;
     width: 100%;
     background-color: #cccccc;
-    font-size: 60px;
-  /*  line-height: 70px;*/
+    /*font-size: 60px;*/
+  /*line-height: 70px;*/
     font-family: 'Permanent Marker', cursive, 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     margin: 0 auto;
-    color: #771;
+    /*color: #771;*/
 }
 
 h1 {
 	font-family: 'Audiowide', cursive, 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	text-align: center;
-	font-size: 60px;
-	line-height: 70px;
+	font-size: 300%;
+	/*line-height: 70px;*/
 	font-weight: 700;
 	margin: 10px;
 	color: #771;
@@ -31,8 +34,8 @@ h1 {
 h2 {
 	font-family: 'Audiowide', cursive, 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	text-align: left;
-	font-size: 30px;
-	line-height: 40px;
+	font-size: 100%;
+	/*line-height: 40px;*/
 	font-weight: 300;
 	margin: 5px;
 	color: #771;
@@ -40,15 +43,32 @@ h2 {
 }
 
 .section-title {
-	clear: both;
+	font-size: 200%;
 }
 
+/*if get object to render*/
+
+.character-image {
+	padding-right: 16px;
+	padding-left: 16px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.character-name {
+	text-align: : center;
+}
+
+.character-health {
+	text-align: center;
+}
 
 img {
 	height: 150px;
 	width: 150px;
 	border-color: green;
 	border-width: 1px;
+	border-radius: 10px;
 	border-style: solid;
 	padding: 20px;
 	background-color: white;
@@ -57,6 +77,7 @@ img {
 
 .fighters:hover {
     background-color: lightblue;
+    border-radius: 10px;
 }
 
 button {
@@ -96,12 +117,10 @@ button {
     bottom: 155px
 }
 
-.selected-characters {
-	clear: both;
+.selected-character {
 	margin: 10px;
 }
 
 .enemies-to-attack {
-	clear: both;
 	margin: 10px;
 }

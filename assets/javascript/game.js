@@ -37,6 +37,10 @@ $(document).ready(function() {
 			enemyAttackBack: 25
 		}
 	};
+
+	var cursorSelectedCharacter;
+	var combatants = [];
+
 	console.log(character);
 
 	var renderOne = function(character, renderArea) {
@@ -45,13 +49,14 @@ $(document).ready(function() {
 		var charImage = $("<img alt='image' class='character.image'>").attr("src", character.imageUrl);
 		var charHealth = $("<div class='character-health'>").text(character.health);
 		charDiv.append(charName).append(charImage).append(charHealth);
-		$("renderArea").append(charDiv);
+		$(renderArea).append(charDiv);
 
 	}
 
 	var displayCharacters = function(charObj, areaRender) {
 		if (areaRender === "#character-section") {
 			$(areaRender).empty();
+
 			for (var key in charObj) {
 				if(charObj.hasOwnProperty(key)) {
 						renderOne(charObj[key], areaRender);
@@ -59,5 +64,40 @@ $(document).ready(function() {
 			}
 		}
 	}
-	displayCharacters(character, "#character-section");
+
+		if (areaRender === "#selected-character") {
+			renderOne(charObj, areaRender);
+		}
+
+		if (areaRender === "#enemies-to-attack") {
+			for(var i=0; i<charObj.length; i++) {
+				renderOne(charObj[i], areaRender);
+			}
+		}
+
+	// displayCharacters(character, "#character-section");
+
+	$(document).on("click", ".fighters", function() {
+		console.log("this clicked");
+	// 	var name = $(this).attr("data-name");
+	// 	console.log(name);
+
+	// If a player character has not yet been chosen
+	if (!cursorSelectedCharacter) {
+		for (var key in character) {
+			if (key !== name) {
+				combatants.push(character[key]);
+			}
+		}
+
+		console.log(combatants);
+
+		// Hide character select div.
+		$("#character-section").hide();
+
+		// Display character and combatants.
+		displayCharacters(cursorSelectedCharacter, "#selected-character";
+		displayCharacters(combatants, "#enemies-to-attack");
+	}
+	})
 });
