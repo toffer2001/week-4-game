@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Star Wars Game</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Audiowide|BenchNine|Permanent+Marker" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		
+		<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+<h1>Star Wars RPG</h1>
+	<div class="section-title"><h2>Pick Your Character</h2></div>
+	<div class="game-section">
+			<div class="fighters" id="yoda">
+				<img src="assets/images/yoda.png">
+				<div class="fighters-text">
+					<p>Yoda</p>
+					<p>120</p>
+				</div>
+			</div>
+			<div class="fighters" id="r2d2">
+				<img src="assets/images/r2d2.jpg">
+				<div class="fighters-text">
+					<p>R2D2</p>
+					<p>100</p>
+				</div>
+			</div>
+			<div class="fighters" id="alien">
+			<img src="assets/images/alien.jpg">
+				<div class="fighters-text">
+					<p>Alien</p>
+					<p>150</p>
+				</div>
+			</div>
+			<div class="fighters" id="chewy">
+			<img src="assets/images/chewy.jpg">
+				<div class="fighters-text">
+					<p>Chewy</p>
+					<p>180</p>
+				</div>
+			</div>
+			<div class="fighters" id="storm-trooper">
+			<img src="assets/images/storm_trooper.jpg">
+				<div class="fighters-text">
+					<p>Storm Trooper</p>
+					<p>200</p>
+				</div>
+		</div>
+	</div>
+
+	<div class="selected-characters">
+		<div class="section-title"><h2>Your Character</h2></div>
+
+	</div>
+
+	<div class="enemies-to-attack">
+		<div class="section-title"><h2>Enemies to Attack</h2></div>
+
+	</div>
+
+	<div class="fight">
+		<div class="section-title"><h2>Fight Section</h2></div>
+			<button id="attack-button">Push to attack</button>
+
+	</div>
+
+	<div class="defend">
+		<div class="section-title"><h2>Defense</h2></div>
+
+	</div>
+
+
+	<div class="end-game-message">
+
+	</div>
+
+	<script type="text/javascript" src ="assets/javascript/game.js">
+	</script>
+</body>
+</html>
