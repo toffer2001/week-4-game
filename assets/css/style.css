@@ -23,10 +23,10 @@ body {
 h1 {
 	font-family: 'Audiowide', cursive, 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	text-align: center;
-	font-size: 300%;
+	font-size: 400%;
 	/*line-height: 70px;*/
 	font-weight: 700;
-	margin: 10px;
+	margin: 5px;
 	color: #771;
 
 }
@@ -55,12 +55,20 @@ h2 {
 	margin-bottom: 3px;
 }
 
+.character {
+	display: inline-block;
+}
 .character-name {
-	text-align: : center;
+	text-align: center;
+	position: relative; 
+   	top: 24px; 
+
 }
 
 .character-health {
 	text-align: center;
+	position: relative; 
+   	bottom: 24px; 
 }
 
 img {
@@ -75,7 +83,7 @@ img {
 	margin: 5px;
 }
 
-.fighters:hover {
+.character:hover {
     background-color: lightblue;
     border-radius: 10px;
 }
@@ -118,9 +126,9 @@ button {
 }
 
 .selected-character {
-	margin: 10px;
+	margin: 5px;
 }
 
 .enemies-to-attack {
-	margin: 10px;
+	margin: 5px;
 }
